@@ -1,0 +1,28 @@
+﻿- type: job
+  id: GuardCadet
+  name: Кадет Стражи
+  description: Новобранец Стражи ещё не повидавший всех невзгод этой работы.
+  playTimeTracker: JobCadetGuard
+  weight: 3
+  startingGear: GuardGear
+  icon: "JobIconCaptain"
+  joinNotifyCrew: false
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  - Guard
+
+- type: startingGear
+  id: GuardGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+  storage:
+    back:
+    - Flash
+    - TelescopicBaton # Goobstation
+    # - StationCharter
+

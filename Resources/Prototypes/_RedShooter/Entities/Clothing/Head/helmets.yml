@@ -1,0 +1,81 @@
+﻿# Противоударный Шлем
+- type: entity
+  parent: [ClothingHeadHelmetBase, BaseSecurityContraband]
+  id: RDSClothingHeadHelmetGuardRiot
+  name: Противоударный Шлем Стражи
+  description: Легкий и прочный шлем с прозрачным забралом. Разработан для защиты головы от ударов тяжелыми предметами и летящих камней.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_light_riot.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_light_riot.rsi
+  - type: IngestionBlocker
+  - type: FlashImmunity
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.95
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+# Шлем Изгоев
+- type: entity
+  parent: [ ClothingHeadHelmetArmoredBase, BaseMajorContraband ]
+  id: RDSClothingHeadHelmetIzgoi
+  name: Шлем Изгоев
+  description: Боевой шлем в стиле старой школы. Глухая защита для тех, чья жизнь без остатка принадлежит Автору.
+  suffix: Орден
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_Izgoi.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_Izgoi.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
+
+# Сфера Стражи (СТШ-81)
+- type: entity
+  parent: ClothingHeadBase
+  id: RDSClothingHeadHelmetGuardSfera
+  name: Сфера Стражи (СТШ-81)
+  description: Глубокая модернизация советской классики. Три массивные титановые пластины в новом чехле обеспечивают отличную защиту головы от осколков и пистолетных пуль.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_sfera.rsi
+    scale: 0.6, 0.6
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian_sfera.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.8
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+# Баллистический Шлем
+- type: entity
+  parent: [ClothingHeadHelmetArmoredBase, BaseSecurityContraband]
+  id: RDSClothingHeadHelmetGuard
+  name: Баллистический Шлем
+  description: Потертый купол, за которым скрываются слои кевлара. Верный защитник головы, не раз доказавший свою эффективность в перестрелках.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Helmets/guardian.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD

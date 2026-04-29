@@ -1,0 +1,29 @@
+﻿# Черные Боксеры
+- type: entity
+  parent: ClothingUnderwearBase
+  id: RDSClothingUnderwearBottomBoxersBlack
+  name: Черные Боксеры
+  description: Надоело белое белье и захотели немного черного? Вот, получите и распишитесь.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Underwear/Bottom/blackboxers.rsi
+
+# Чёрные Трусы в сердечко
+- type: entity
+  parent: ClothingUnderwearBase
+  id: RDSClothingUnderwearBottomBoxersBlackHearts
+  name: Сверхсекретные Тактические Чёрные Трусы в сердечко
+  description: В них ходят самые уверенные в себе.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Underwear/Bottom/heartshapedblackboxers.rsi
+
+# Белые Трусы в сердечко
+- type: entity
+  parent: ClothingUnderwearBase
+  id: RDSClothingUnderwearBottomBoxersHearts
+  name: Сверхсекретные Тактические Белые Трусы в сердечко
+  description: В них ходят самые уверенные в себе.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Underwear/Bottom/heart-shapedboxers.rsi

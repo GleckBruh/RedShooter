@@ -1,0 +1,18 @@
+﻿# Капюшен Маскхалата
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodGhilliesCloak
+  name: Капюшен Маскхалата
+  description: Ткань, скрывающая лицо в глубокой тени. Этот капюшон превращает солдата в бесформенный элемент ландшафта, заставляя врага гадать, откуда прилетит следующий выстрел.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Hoods/ghillies_hood.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Hoods/ghillies_hood.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair

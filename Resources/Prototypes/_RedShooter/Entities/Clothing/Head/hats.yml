@@ -1,0 +1,18 @@
+﻿- type: entity
+  parent: [ClothingHeadHatBeret]
+  id: ClothingHeadHatBeretGuard
+  name: Берет Стражи
+  description: Багровый берет символикой Социализма Ордена в знак преданности. Такое обычно носят офицеры, которые не боятся быть на ладони у вражеских снайперов.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Hats/guardian_beret.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Hats/guardian_beret.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable
+    - PetWearable
+    - CorgiWearable
+    - HamsterWearable
+    - WhitelistChameleon

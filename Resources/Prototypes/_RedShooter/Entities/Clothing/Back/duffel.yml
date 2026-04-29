@@ -1,0 +1,11 @@
+﻿- type: entity
+  parent: ClothingBackpackDuffel
+  id: RDSClothingBackpackDuffelGuard
+  name: Вещмешок Стражи
+  description: Простой и крепкий мешок для походного быта. Ничего лишнего — только прочность и место для припасов.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Back/Duffels/guardians.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,6

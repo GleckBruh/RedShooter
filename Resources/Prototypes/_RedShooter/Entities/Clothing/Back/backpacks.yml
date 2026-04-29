@@ -1,0 +1,29 @@
+﻿- type: entity
+  parent: ClothingBackpack
+  id: RDSClothingGuardBackpack
+  name: Рюкзак Стражи
+  description: Надежное снаряжение для тех, кто всегда на посту. Прочный, вместительный и готовый к любым испытаниям.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Back/Backpacks/guardians.rsi
+  - type: Storage
+    grid:
+    - 0,0,8,4
+
+- type: entity
+  parent: ClothingBackpack
+  id: RDSClothingBackpackGuard80L
+  name: 80-ти литровый рюкзак Стражи
+  description: Настоящий гигант среди снаряжения. Создан для тех, кто уходит в дозор на недели и привык всё свое носить с собой.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Back/Backpacks/guardian_80L.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,12,2
+    - 0,4,2,8
+    - 4,4,8,8
+    - 10,4,12,8

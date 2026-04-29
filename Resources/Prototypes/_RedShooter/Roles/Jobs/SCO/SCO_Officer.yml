@@ -1,0 +1,13 @@
+﻿- type: job
+  id: GuardOfficerSCO
+  name: Офицер Стражи
+  description: Новобранец Стражи ещё не повидавший всех невзгод этой работы
+  playTimeTracker: JobSCOGuard
+  weight: 20
+  startingGear: CaptainGear
+  icon: "JobIconCaptain"
+  joinNotifyCrew: false
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  - Guard

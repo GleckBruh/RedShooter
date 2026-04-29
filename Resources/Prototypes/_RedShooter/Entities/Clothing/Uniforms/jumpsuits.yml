@@ -1,0 +1,103 @@
+﻿# Комбинезон рабочего редшутерка
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitWorker
+  name: Униформа Рабочего
+  description: Почти каждый Социалист считает своей целью жизни стать частью индустрии РедШутера, данная униформа доказывает это!
+  suffix: РедШутер
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/redshooter_worker.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/redshooter_worker.rsi
+
+# Служебная форма Стражи
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitServiseGuard
+  name: Служебная форма Стражи
+  description: Повседневная форма из немнущейся ткани. Удобный крой не сковывает движения, позволяя комфортно нести службу в течение всей смены.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/service_guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/service_guardian.rsi
+
+# Униформа Изгоев
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitIzgoi
+  name: Униформа Изгоев
+  description: Тёмная водолазка с высоким горлом и износостойкие брюки. Простой и суровый облик солдата, для которого комфорт значит меньше, чем исполнение приказа.
+  suffix: Орден
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/izgoi.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/izgoi.rsi
+
+# Униформа Ордена
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitOrder
+  name: Униформа Ордена
+  description: Базовая одежда из высококачественного трикотажа и плотной ткани. Она служит идеальным поддоспешником, не натирая кожу и не сковывая движений в пылу сражения.
+  suffix: Орден
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/order.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/order.rsi
+
+# Униформа Сепаратистов
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitSeparat
+  name: Униформа Сепаратистов
+  description: Практичный комплект в неброских тонах. Эта форма не сковывает движений и позволяет бойцу сопротивления чувствовать себя уверенно как в городских лабиринтах, так и в дикой местности.
+  suffix: Сепаратисты
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/separatist.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/separatist.rsi
+
+# Униформа ССО Стражи
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitSSOGuard
+  name: Униформа ССО Стражи
+  description: Униформа спецподразделений, сочетающая в себе передовую эргономику и износостойкость. Идеальная основа для тяжелой экипировки.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/guardian_sso.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/guardian_sso.rsi
+
+# Униформа Стражи
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitGuard
+  name: Униформа Стражи
+  description: Форма, по которой узнают защитников города. Она внушает спокойствие гражданам и служит суровым напоминанием для тех, кто решит преступить закон.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/guardian.rsi
+
+# Уплотненная униформа Стражи
+- type: entity
+  parent: ClothingUniformBase
+  id: RDSClothingUniformJumpsuitHeavyGuard
+  name: Уплотненная униформа Стражи
+  description: Утяжеленный вариант стандартной формы. Улучшенная терморегуляция и повышенная износостойкость материалов позволяют использовать эту униформу в самых суровых условиях патрулирования.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/heavy_guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Uniforms/Jumpsuit/heavy_guardian.rsi

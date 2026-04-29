@@ -1,0 +1,27 @@
+﻿- type: job
+  id: GuardCommander
+  name: Командир Стражи
+  description: Высокопоставленный боец управляющий и координирующий действиями стражи.
+  playTimeTracker: JobCommanderGuard
+  weight: 1
+  startingGear: GuardCommanderGear
+  icon: "JobIconCaptain"
+  joinNotifyCrew: false
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  - Guard
+
+- type: startingGear
+  id: GuardCommanderGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
+    id: CaptainPDA
+    ears: ClothingHeadsetAltCommand
+  storage:
+    back:
+    - Flash
+    - TelescopicBaton # Goobstation
+    # - StationCharter

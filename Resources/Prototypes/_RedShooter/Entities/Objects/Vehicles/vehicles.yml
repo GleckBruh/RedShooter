@@ -1,0 +1,38 @@
+- type: entity
+  parent: BaseVehicle
+  id: RDSVehicleMotorbike
+  name: Мотоцикл Стражи
+  description: Мотоцикл отважной стражи города РэдШутер.
+  components:
+  - type: Vehicle
+    renderOver: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
+  - type: Sprite
+    sprite: _RedShooter/Objects/Vehicles/motorbike.rsi
+    state: vehicle
+    noRot: true
+  - type: MovementSpeedModifier
+    acceleration: 2
+    friction: 1.5
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 7
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 3.5
+    softness: 2
+  - type: Storage
+    grid:
+    - 0,0,3,1
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - SkeletonMotorcycleKeys
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3

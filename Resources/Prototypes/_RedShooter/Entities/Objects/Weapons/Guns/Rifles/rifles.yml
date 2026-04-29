@@ -1,0 +1,56 @@
+﻿- type: entity
+  name: АК-74МП
+  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  id: RDSWeaponRifleAkMP
+  suffix: РедШутер
+  description: Модификация Ордена АК-74М с интегрированным глушителем. Отголосок прошлого из Космической Программы КААС-ОСТ идеально подходящий для работы в других мирах, и даже в космосе.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Objects/Weapons/Guns/Rifles/ak74mp/big.rsi # Orion-Edit: New sprites
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 0.9, 0.9 # Orion
+  - type: Clothing # Orion: New sprites
+    sprite: _RedShooter/Objects/Weapons/Guns/Rifles/ak74mp/tiny.rsi
+  - type: Item # Orion: New sprites
+    sprite: _RedShooter/Objects/Weapons/Guns/Rifles/ak74mp/tiny.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      params:
+        volume: -14
+  - type: ChamberMagazineAmmoProvider
+    #boltClosed: null # Orion-Edit
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        #        name: Magazine # Orion-Edit: Localization
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        #        name: Chamber # Orion-Edit: Localization
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

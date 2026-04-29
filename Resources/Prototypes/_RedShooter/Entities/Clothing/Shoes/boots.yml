@@ -1,0 +1,14 @@
+﻿# Говнодавы Ордена
+- type: entity
+  parent: [ClothingShoesMilitaryBase, BaseSecurityContraband]
+  id: RDSClothingShoesBootsJackGuard
+  name: Обувь Ордена
+  description: Высокая обувь из толстой кожи с железными вставками. Каждая царапина на них — след от пройденных испытаний во славу Ордена.
+  suffix: Орден
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Shoes/Boots/order_boots.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Shoes/Boots/order_boots.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.5

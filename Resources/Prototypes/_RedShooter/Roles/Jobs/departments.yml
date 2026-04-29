@@ -1,0 +1,26 @@
+﻿- type: department
+  id: Guard
+  name: Стража
+  description: Отважная стража РедШутера
+  color: "#a64e4e"
+  # Orion-Start
+  weight: -2
+  buttonStyle: ButtonColorCommandDepartment
+  # Orion-End
+  roles:
+  - GuardCadet
+  - GuardOfficer
+  - GuardCommander
+  - SecurityOfficer
+
+- type: department
+  id: SCO
+  name: ССО
+  description: Отдел Специальных Скрытых Операций
+  color: "#a64e4e"
+  # Orion-Start
+  weight: -1
+  buttonStyle: ButtonColorCommandDepartment
+  # Orion-End
+  roles:
+  - GuardOfficerSCO

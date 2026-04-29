@@ -1,0 +1,27 @@
+﻿- type: job
+  id: GuardOfficer
+  name: Офицер Стражи
+  description: Обученный офицер, знающий что к чему.
+  playTimeTracker: JobOfficerGuard
+  weight: 2
+  startingGear: GuardOfficerGear
+  icon: "JobIconCaptain"
+  joinNotifyCrew: false
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  - Guard
+
+- type: startingGear
+  id: GuardOfficerGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesCommand
+    #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
+    id: RDSPassportGuard
+    ears: RDSClothingHeadsetGuard
+  storage:
+    back:
+    - Flash
+    - TelescopicBaton # Goobstation
+    # - StationCharter

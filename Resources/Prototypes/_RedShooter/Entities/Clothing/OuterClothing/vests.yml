@@ -1,0 +1,47 @@
+﻿# Броня Медика Стражи
+- type: entity
+  parent: [ClothingOuterArmorBase, BaseSecurityContraband]
+  id: RDSClothingOuterVestGuardMedic
+  name: Броня Медика Стражи
+  description: Легкая и прочная броня полевого врача. Сочетает надежную защиту жизненно важных органов и свободу движений для проведения операций.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/OuterClothing/Vests/guardian_med.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/OuterClothing/Vests/guardian_med.rsi
+
+#Плитоноска Стражи
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSyndicateContraband]
+  id: RDSClothingOuterVestWebGuard
+  name: Плитоноска Стражи
+  description: Штурмовой жилет с набором универсальных подсумков. Максимальная функциональность в одном компактном решении.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/OuterClothing/Vests/guardian_armor.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/OuterClothing/Vests/guardian_armor.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        # ADT-Tweak-Start
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.6
+  - type: StaminaResistance
+    damageCoefficient: 0.7
+  # ADT-tweak-End
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: FireProtection
+    reduction: 0.85
+  - type: StaticPrice
+    price: 2500

@@ -1,0 +1,7 @@
+﻿- type: accessLevel
+  id: Civilian
+  name: Гражданский
+
+- type: accessLevel
+  id: CivilianEngineering
+  name: Гражданский Инженер

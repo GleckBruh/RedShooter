@@ -1,0 +1,16 @@
+﻿# Наушники
+- type: entity
+  parent: ClothingHeadset
+  id: RDSClothingHeadsetGuard
+  name: Наушники Стражи
+  description: Активные наушники с функцией радиосвязи. Незаменимый инструмент для координации действий отряда и сохранения слуха в условиях интенсивного огневого контакта.
+  suffix: Стража
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - RDSEncryptionKeyGuards
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Ears/Headsets/guardianheadset.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Ears/Headsets/guardianheadset.rsi

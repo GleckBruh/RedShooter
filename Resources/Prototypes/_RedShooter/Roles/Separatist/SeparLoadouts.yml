@@ -1,0 +1,66 @@
+﻿- type: startingGear
+  id: SeparA
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitSeparat
+    outerClothing: ClothingOuterArmorUEGVestLight
+    suitstorage: WeaponSubMachineGunInteQSMG
+    back: ClothingBackpackSatchelInteQ
+    shoes: ClothingShoesBootsSyndieFilled
+    gloves: ClothingHandsGlovesColorBlack
+    mask: RDSClothingMaskGuardianCoif
+    eyes: ClothingEyesGlassesCheapSunglasses
+    head: ClothingHeadHatGreyFlatcap
+    belt: ClothingBeltInteQDropPouchSeparAFilled
+    pocket1: RadioHandheld
+    pocket2: WeaponPistolViper
+  storage:
+    back:
+    - MagazineBoxPistolInteQ
+    - MedkitFilled
+    - BoxFlare
+
+- type: startingGear
+  id: SeparB
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitSeparat
+    outerClothing: ClothingOuterArmorXenonautenMedium
+    suitstorage: WeaponRifleAk
+    back: RDSClothingGuardBackpack
+    shoes: ClothingShoesBootsSyndieFilled
+    gloves: ClothingHandsGlovesColorBlack
+    mask: RDSClothingMaskGasSeparat
+    eyes: RDSClothingEyesBallisticGlassesGuard
+    head: RDSClothingHeadHelmetGuardSfera
+    belt: ClothingBeltInteQWebbingSeparBFilled
+    pocket1: RadioHandheld
+    pocket2: WeaponPistolViper
+  storage:
+    back:
+    - MedkitCombatFilled
+    - BoxFlare
+    - MagazineBoxLightRifleInteQ
+
+- type: startingGear
+  id: SeparC
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitSeparat
+    outerClothing: RDSClothingOuterGuardArmorHeavy
+    suitstorage: WeaponRifleM41
+    back: RDSClothingBackpackGuard80L
+    shoes: ClothingShoesBootsSyndieFilled
+    gloves: ClothingHandsGlovesColorBlack
+    mask: RDSClothingMaskGasSeparat
+    eyes: ClothingEyesGlassesCheapSunglasses
+    head: ClothingHeadHelmetAltyn
+    belt: ClothingBeltMilitaryWebbingGrenadeFilled
+    pocket1: RadioHandheld
+    pocket2: WeaponPistolViper
+  storage:
+    back:
+    - MedkitFilled
+    - BoxFlare
+    - MagazineHeavyRifleM41
+    - MagazineHeavyRifleM41
+    - MagazineHeavyRifleM41
+    - MagazineHeavyRifleM41
+    - MagazineBoxRifleBig

@@ -1,0 +1,32 @@
+﻿- type: entity
+  id: ClothingBeltInteQWebbingSeparBFilled
+  parent: ClothingBeltInteQWebbing
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineLightRifle
+    - id: MagazineLightRifle
+    - id: MagazineLightRifle
+    - id: MagazineLightRifle
+    - id: ExGrenade
+    - id: ExGrenade
+    - id: ExGrenade
+
+- type: entity
+  id: ClothingBeltInteQDropPouchSeparAFilled
+  parent: ClothingBeltInteQDropPouch
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Stimpack
+    - id: Stimpack
+    - id: Stimpack
+    - id: Stimpack
+    - id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGun
+    - id: ExGrenade
+    - id: ExGrenade

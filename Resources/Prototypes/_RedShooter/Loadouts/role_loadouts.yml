@@ -1,0 +1,23 @@
+﻿- type: roleLoadout
+  id: JobGuardOfficer
+  groups:
+  - GuardHelmet
+  - GuardJumpsuit
+  - GuardBackpack
+# - GuardGun
+# - GuardMelee
+  - GuardOuterClothing
+  - GuardShoes
+# - GuardNeck
+  - GuardMask
+# - GuardPassport
+  - GuardBelt
+  - SurvivalSecurity
+  - Trinkets
+  - GroupSpeciesBreathToolSecurity
+  # Orion-Start
+  - Undershirt
+  - Underwear
+  - Socks
+  - Wrists
+  # Orion-End

@@ -1,0 +1,13 @@
+﻿- type: radioChannel
+  id: RDSGuard
+  name: Стража
+  keycode: "р"
+  frequency: 1488
+  color: "#a64e4e"
+
+- type: radioChannel
+  id: RDSSeparatist
+  name: Сепаратисты
+  keycode: "ч"
+  frequency: 4255
+  color: "#cf561b"

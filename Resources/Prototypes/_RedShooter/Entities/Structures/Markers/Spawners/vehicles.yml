@@ -1,0 +1,13 @@
+- type: entity
+  name: Motobike Spawner
+  id: RDSSpawnVehicleMotorbike
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _RedShooter/Objects/Vehicles/motorbike.rsi
+        state: keys
+  - type: ConditionalSpawner
+    prototypes:
+      - RDSVehicleMotorbike

@@ -1,0 +1,13 @@
+- type: entity
+  parent: VehicleKeyATV
+  id: RDSVehicleKeyMotorbike
+  name: Ключ Мотоцикла Стражи
+  description: Ключ позволяющий вам завести класснючий мотик стражи.
+  components:
+    - type: Tag
+      tags:
+        - VehicleKey
+        - SkeletonMotorcycleKeys
+    - type: Sprite
+      sprite: Objects/Vehicles/motorbike.rsi
+      state: keys

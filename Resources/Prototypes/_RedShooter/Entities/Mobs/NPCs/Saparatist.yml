@@ -1,0 +1,53 @@
+﻿- type: entity
+  name: salvager
+  parent: BaseMobHuman
+  id: MobSeparA
+  components:
+      - type: NpcFactionMember
+        factions:
+            - Syndicate
+      - type: Loadout
+        prototypes:
+            - SeparA
+      - type: InputMover
+      - type: MobMover
+      - type: HTN
+        rootTask:
+          task: SimpleHumanoidHostileCompound
+      - type: PartialAbsorbable # Goobstation - changelings
+
+- type: entity
+  name: salvager
+  parent: BaseMobHuman
+  id: MobSeparB
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - SeparB
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: PartialAbsorbable # Goobstation - changelings
+
+- type: entity
+  name: salvager
+  parent: BaseMobHuman
+  id: MobSeparC
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - SeparC
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: PartialAbsorbable # Goobstation - changelings

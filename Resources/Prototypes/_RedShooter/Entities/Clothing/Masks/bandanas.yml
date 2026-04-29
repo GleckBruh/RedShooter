@@ -1,0 +1,25 @@
+﻿- type: entity
+  parent: ClothingMaskGas
+  id: RDSClothingMaskGuardianCoif
+  name: Балаклава Стражи
+  description: Обычная маска для сокрытия своего лица современной модели, еще надеть баллистические очки и вас визуально вообще не узнать.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Head/Bandanas/guardian_coif.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Head/Bandanas/guardian_coif.rsi
+    slots:
+    - mask
+    - neck
+    - eyes
+    clothingVisuals:
+      mask:
+      - state: equipped-MASK
+      neck:
+      - state: equipped-MASK
+      eyes:
+      - state: equipped-MASK
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - FacialHair

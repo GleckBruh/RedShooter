@@ -1,0 +1,47 @@
+﻿# Маскхалат
+- type: entity
+  parent: ClothingNeckBase
+  id: RDSClothingNeckCloakGhilliesCloak
+  name: Маскхалат
+  description: Вторая кожа для разведчика и охотника. Этот маскировочный костюм позволяет подобраться к противнику на расстояние броска ножа или затаиться в засаде, став частью мертвого пейзажа.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Neck/Cloaks/ghillie.rsi
+  - type: ToggleableClothing # Goobstation - Modsuits change
+    requiredSlot:
+    - neck
+    clothingPrototypes:
+      head: ClothingHeadHatHoodGhilliesCloak
+  - type: Construction
+    graph: Капюшен Маскхалата
+    node: cloak
+  - type: UserInterface
+    interfaces:
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:Container {}
+
+# Тень РедШутера
+- type: entity
+  parent: ClothingNeckBase
+  id: RDSClothingNeckMRKS
+  name: Тень РедШутера
+  description: Потертая камера и выцветшие знаки отличия, за которыми стоит история сотен выполненных контрактов. Это снаряжение видело то, во что обычный солдат не захочет верить, и сохранило память о моментах, когда Тень решал исход битвы в одиночку.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Neck/Misc/Pins/mrks.rsi
+
+# Тень РедШутера
+- type: entity
+  parent: ClothingNeckBase
+  id: RDSClothingNeckRDS
+  name: Красный Стрелок
+  description: Символы, вселяющие стальную уверенность в подчиненных. Красный цвет этих знаков — не просто дань имени, а напоминание о железной воле командира, который прошел путь от рядового стрелка до высшего офицерского чина.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Neck/Misc/Pins/reds.rsi

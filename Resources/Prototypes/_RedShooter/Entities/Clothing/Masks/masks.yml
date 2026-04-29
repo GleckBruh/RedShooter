@@ -1,0 +1,66 @@
+﻿# Противогаз Стражи
+- type: entity
+  parent: [ClothingMaskGas, BaseSecurityContraband]
+  id: RDSClothingMaskGasGuard
+  name: Противогаз Стражи
+  description: Надежный фильтрующий противогаз с боковым креплением фильтра, не мешающим прицеливанию. Идеально подогнан под шлем Стражи, обеспечивая полную герметичность в самых агрессивных средах.
+  suffix: Стража
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Mask/guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Mask/guardian.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+# Противогаз Сепаратистов
+- type: entity
+  parent: [ClothingMaskGas, BaseSecurityContraband]
+  id: RDSClothingMaskGasSeparat
+  name: Противогаз Сепаратистов
+  description: Старый, но надежный противогаз шлем-масочного типа. Его легко узнать по специфической передней части — бойцы сопротивления ценят эту модель за отличную передачу голоса, что критично при координации атак в дыму.
+  suffix: Сепаратисты
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Mask/separatist.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Mask/separatist.rsi
+
+# Противогаз Ордена
+- type: entity
+  parent: [ClothingMaskGas, BaseSecurityContraband]
+  id: RDSClothingMaskGasOrder
+  name: Противогаз Ордена
+  description: Черная глянцевая маска, ставшая лицом карательных подразделений Ордена. Окуляры, напоминающие глаза насекомого, лишают бойца человеческих черт, оставляя лишь холодный расчет и готовность исполнить приказ любой ценой.
+  suffix: Орден
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Mask/order.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Mask/order.rsi
+
+# Противогаз Изгоев
+- type: entity
+  parent: [ClothingMaskGas, BaseSecurityContraband]
+  id: RDSClothingMaskGasIzgoi
+  name: Противогаз Изгоев
+  description: Бледно-серая резина, пропахшая тальком и гарью. В сочетании с пустым взглядом круглых окуляров этот противогаз придает бойцу вид ожившего мертвеца, готового идти вперед сквозь любые ядовитые туманы ради воли Автора.
+  suffix: Орден
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Mask/izgoi.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Mask/izgoi.rsi

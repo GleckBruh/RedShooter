@@ -1,0 +1,77 @@
+- type: lobbyBackground
+  id: ComeWithUs
+  background: /Textures/_RedShooter/LobbyScreens/ComeWithUs.png
+  name: ComeWithUs
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: Darkness
+  background: /Textures/_RedShooter/LobbyScreens/Darkness.png
+  name: Darkness
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: EXPLOOOSION
+  background: /Textures/_RedShooter/LobbyScreens/EXPLOOOSION.png
+  name: EXPLOOOSION
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: Glory
+  background: /Textures/_RedShooter/LobbyScreens/Glory.png
+  name: Glory
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: Heartless
+  background: /Textures/_RedShooter/LobbyScreens/Heartless.png
+  name: Heartless
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: OccupationOfAntonovko
+  background: /Textures/_RedShooter/LobbyScreens/OccupationOfAntonovko.png
+  name: OccupationOfAntonovko
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: OrderSevers
+  background: /Textures/_RedShooter/LobbyScreens/OrderSevers.png
+  name: OrderSevers
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: OSS_hlopciki_2
+  background: /Textures/_RedShooter/LobbyScreens/OSS_hlopciki_2.png
+  name: OSS_hlopciki_2
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: TheElderBrother
+  background: /Textures/_RedShooter/LobbyScreens/TheElderBrother.png
+  name: TheElderBrother
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: TheLeader
+  background: /Textures/_RedShooter/LobbyScreens/TheLeader.jpg
+  name: TheLeader
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: TheMoleCavity
+  background: /Textures/_RedShooter/LobbyScreens/TheMoleCavity.png
+  name: TheMoleCavity
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: WarMachinePrototype
+  background: /Textures/_RedShooter/LobbyScreens/WarMachinePrototype.png
+  name: WarMachinePrototype
+  artist: Sans_Polus
+
+- type: lobbyBackground
+  id: HeartlessAI
+  background: /Textures/_RedShooter/LobbyScreens/HeartlessAI.png
+  name: HeartlessAI
+  artist: Sans_Polus

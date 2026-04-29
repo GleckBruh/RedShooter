@@ -1,0 +1,44 @@
+﻿- type: entity
+  parent: BaseSign
+  id: RDSBaseFlag
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Structures/Wallmounts/flags.rsi
+
+- type: entity
+  parent: RDSBaseFlag
+  id: RDSOrderFlag
+  name: Флаг Ордена
+  description: СЛАВА АВТОРУ!
+  components:
+  - type: Sprite
+    state: order_flag
+
+
+- type: entity
+  parent: RDSBaseFlag
+  id: RDSOrderVictoryFlag
+  name: Флаг Победы Ордена
+  description: СЛАВА АВТОРУ!
+  components:
+  - type: Sprite
+    state: order_victory_flag
+
+- type: entity
+  parent: RDSBaseFlag
+  id: RDSOrderSocialismFlag
+  name: Флаг Социализма Ордена
+  description: СЛАВА АВТОРУ!
+  components:
+  - type: Sprite
+    state: order_socialism_flag
+
+- type: entity
+  parent: RDSBaseFlag
+  id: RDSSeparatistFlag
+  name: Флаг Сепаратистов
+  description: НЕ СЛАВА АВТОРУ!
+  components:
+  - type: Sprite
+    state: separatist_flag

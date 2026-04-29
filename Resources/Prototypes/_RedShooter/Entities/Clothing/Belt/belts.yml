@@ -1,0 +1,41 @@
+﻿# Пояс стражи
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id: RDSClothingBeltGuard
+  name: Пояс Стражи
+  description: Классический элемент формы. Удобный, прочный и не стесняющий движений в бою.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Belt/guardian.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Belt/guardian.rsi
+  - type: ItemMapper
+    mapLayers:
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
+# РПС Стражи
+- type: entity
+  parent: ClothingBeltSecurity
+  id: RDSClothingBeltGuardWebbing
+  name: РПС Стражи
+  description: Основа боевой выкладки. Множество креплений и удобные лямки для тех, кто несет службу на передовой.
+  suffix: Стража
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Belt/guardianwebbing.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Belt/guardianwebbing.rsi
+    renderOrder: 10

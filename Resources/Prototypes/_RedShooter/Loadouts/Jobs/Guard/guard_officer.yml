@@ -1,0 +1,192 @@
+﻿- type: loadoutEffectGroup
+  id: SergeantMajor
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Guards
+      time: 108000 # 30 hrs
+
+# Head
+- type: loadout
+  id: GuardHelmet
+  equipment:
+    head: RDSClothingHeadHelmetGuard
+
+- type: loadout
+  id: GuardHelmetRiot
+  equipment:
+    head: RDSClothingHeadHelmetGuardRiot
+
+- type: loadoutEffectGroup
+  id: GuardIzgoi
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Guard
+      time: 36000 #10 hrs
+
+- type: loadoutEffectGroup
+  id: GuardAltyn
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: Guard
+      time: 144000 #40 hrs
+
+- type: loadout
+  id: GuardHelmetIzgoi
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GuardIzgoi
+  equipment:
+    head: RDSClothingHeadHelmetIzgoi
+
+- type: loadout
+  id: GuardHelmetAltyn
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GuardAltyn
+  equipment:
+    head: ClothingHeadHelmetAltyn
+
+# Jumpsuit
+- type: loadout
+  id: GuardJumpsuit
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitGuard
+
+- type: loadout
+  id: GuardJumpsuitHeavy
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitHeavyGuard
+
+- type: loadout
+  id: GuardJumpsuitOrder
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitOrder
+
+- type: loadout
+  id: GuardJumpsuitServise
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitServiseGuard
+
+- type: loadout
+  id: GuardJumpsuitIzgoi
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GuardIzgoi
+  equipment:
+    jumpsuit: RDSClothingUniformJumpsuitIzgoi
+
+# Back
+- type: loadout
+  id: GuardBackpack
+  equipment:
+    back: RDSClothingGuardBackpack
+
+- type: loadout
+  id: GuardBackpack80L
+  equipment:
+    back: RDSClothingBackpackGuard80L
+
+- type: loadout
+  id: GuardSatchel
+  equipment:
+    back: RDSClothingBackpackGuardSatchel
+
+- type: loadout
+  id: GuardSatchelAlt
+  equipment:
+    back: ClothingBackpackSatchelInteQ
+
+- type: loadout
+  id: GuardDuffel
+  equipment:
+    back: RDSClothingBackpackDuffelGuard
+
+# Belt
+- type: loadout
+  id: GuardBelt
+  equipment:
+    belt: RDSClothingBeltGuard
+
+- type: loadout
+  id: GuardWebbing
+  equipment:
+    belt: RDSClothingBeltGuardWebbing
+
+# Outerclothing
+- type: loadout
+  id: ArmorWebGuard
+  equipment:
+    outerClothing: RDSClothingOuterVestWebGuard
+
+- type: loadout
+  id: MediumArmourGuard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GuardAltyn
+  equipment:
+    outerClothing: ClothingOuterArmorXenonautenMedium
+
+- type: loadout
+  id: ArmorGuardBasic
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: ArmorGuardRiot
+  equipment:
+    outerClothing: RDSClothingOuterArmorGuardRiot
+
+- type: loadout
+  id: ArmorGuardBulletproof
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof
+
+# Shoes
+- type: loadout
+  id: CombatJackOrder
+  equipment:
+    shoes: RDSClothingShoesBootsJackGuard
+
+# Passport
+- type: loadout
+  id: PassportGuard
+  equipment:
+    id: RDSPassportGuard
+
+- type: loadout
+  id: PassportGuardSergeantMajor
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SergeantMajor
+  equipment:
+    id: RDSPassportGuard
+
+# Mask
+- type: loadout
+  id: MaskGuardCoif
+  equipment:
+    id: RDSClothingMaskGuardianCoif
+
+- type: loadout
+  id: MaskGasGuard
+  equipment:
+    id: RDSClothingMaskGasGuard
+
+- type: loadout
+  id: MaskGasOrder
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SergeantMajor
+  equipment:
+    id: RDSClothingMaskGasOrder
+
+- type: loadout
+  id: MaskGasGuardIzgoi
+  equipment:
+    id: RDSClothingMaskGasIzgoi

@@ -1,0 +1,17 @@
+﻿# Баллистические очки
+- type: entity
+  parent: ClothingEyesBase
+  id: RDSClothingEyesBallisticGlassesGuard
+  name: Баллистические очки
+  description: Тёмный или зеркальный фильтр скрывает взгляд бойца, делая его облик более суровым и сосредоточенным. Эти очки — граница между хаосом сражения и холодным расчетом стрелка.
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Eyes/Glasses/guardian_goggles.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Eyes/Glasses/guardian_goggles.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.97
+  - type: FlashImmunity

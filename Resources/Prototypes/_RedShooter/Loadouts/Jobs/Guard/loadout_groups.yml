@@ -1,0 +1,55 @@
+﻿- type: loadoutGroup
+  id: GuardJumpsuit
+  name: Комбинезон Стражи
+  loadouts:
+  - GuardJumpsuit
+  - GuardJumpsuitHeavy
+  - GuardJumpsuitOrder
+  - GuardJumpsuitServise
+  - GuardJumpsuitIzgoi
+
+- type: loadoutGroup
+  id: GuardBackpack
+  name: Рюкзак стражи
+  loadouts:
+  - GuardBackpack
+  - GuardBackpack80L
+  - GuardSatchel
+  - GuardSatchelAlt
+  - GuardDuffel
+
+- type: loadoutGroup
+  id: GuardBelt
+  name: Пояс стражи
+  loadouts:
+  - GuardBelt
+  - GuardWebbing
+
+- type: loadoutGroup
+  id: GuardHelmet
+  name: Шлем стражи
+  minLimit: 0
+  loadouts:
+  - GuardHelmet
+  - GuardHelmetRiot
+  - GuardHelmetIzgoi
+  - GuardHelmetAltyn
+
+- type: loadoutGroup
+  id: GuardOuterClothing
+  name: Верхняя одежда
+  loadouts:
+  - ArmorWebGuard
+  - MediumArmourGuard
+  - ArmorGuardBasic
+  - ArmorGuardRiot
+
+- type: loadoutGroup
+  id: GuardShoes
+  name: Ботинки стражи
+  loadouts:
+  - CombatJackOrder
+  - CombatBoots
+
+
+

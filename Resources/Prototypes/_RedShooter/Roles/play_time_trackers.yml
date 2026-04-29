@@ -1,0 +1,11 @@
+﻿- type: playTimeTracker
+  id: JobCadetGuard
+
+- type: playTimeTracker
+  id: JobOfficerGuard
+
+- type: playTimeTracker
+  id: JobCommanderGuard
+
+- type: playTimeTracker
+  id: JobSCOGuard

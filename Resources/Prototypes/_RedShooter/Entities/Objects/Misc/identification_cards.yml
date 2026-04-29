@@ -1,0 +1,14 @@
+- type: entity
+  parent: IDCardStandard
+  id: RDSPassportGuard
+  name: Удостоверение личности
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Objects/Misc/id_cards.rsi
+    layers:
+    - state: redshooter
+  - type: Access
+    tags:
+    - Guard
+  - type: NanoChatCard # DeltaV
+    listNumber: false
