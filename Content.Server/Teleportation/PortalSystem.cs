@@ -13,6 +13,7 @@ using Content.Shared.Database;
 using Content.Shared.Ghost;
 using Content.Shared.Mind.Components;
 using Content.Shared.Teleportation.Systems;
+using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
 
 namespace Content.Server.Teleportation;

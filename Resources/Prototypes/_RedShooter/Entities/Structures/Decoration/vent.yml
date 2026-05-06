@@ -1,0 +1,33 @@
+﻿- type: entity
+  id: FloorStairPortal
+  name: Переход
+  description: Ведёт на другой этаж.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    drawdepth: FloorTiles
+    color: "#00000088"
+    sprite: _RedShooter/Structures/Decoration/vent.rsi
+    state: vent
+  - type: Portal
+    arrivalSound:
+      path: /Audio/_RedShooter/Effects/Stairs/stair_out.ogg
+    departureSound:
+      path: /Audio/_RedShooter/Effects/Stairs/stairs_in.ogg
+  - type: LinkedEntity
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      portalFixture:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.48,0.25,0.48"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        hard: false
