@@ -98,6 +98,11 @@
     back: RDSClothingBackpackGuardSatchel
 
 - type: loadout
+  id: GuardDuffel15MOLLE
+  equipment:
+    back: ClothingBackpackDuffelTomato15MOLLE
+
+- type: loadout
   id: GuardSatchelAlt
   equipment:
     back: ClothingBackpackSatchelInteQ
@@ -125,12 +130,14 @@
     outerClothing: RDSClothingOuterVestWebGuard
 
 - type: loadout
-  id: MediumArmourGuard
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: GuardAltyn
+  id: ArmorXenonautenLight
   equipment:
-    outerClothing: ClothingOuterArmorXenonautenMedium
+    outerClothing: ClothingOuterArmorXenonautenLight
+
+- type: loadout
+  id: ArmorUEGVestLight
+  equipment:
+    outerClothing: ClothingOuterArmorUEGVestLight
 
 - type: loadout
   id: ArmorGuardBasic
@@ -146,6 +153,14 @@
   id: ArmorGuardBulletproof
   equipment:
     outerClothing: ClothingOuterArmorBulletproof
+
+- type: loadout
+  id: MediumArmourGuard
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: GuardAltyn
+  equipment:
+    outerClothing: ClothingOuterArmorXenonautenMedium
 
 # Shoes
 - type: loadout

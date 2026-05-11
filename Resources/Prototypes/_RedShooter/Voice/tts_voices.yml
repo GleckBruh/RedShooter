@@ -1,0 +1,62 @@
+﻿- type: ttsVoice
+  id: Ruslan
+  name: Руслан
+  speaker: ruslan
+  sex: Male
+  source: Своячки
+
+- type: ttsVoice
+  id: John
+  name: Джон
+  speaker: john
+  sex: Male
+  source: Своячки
+
+- type: ttsVoice
+  id: Dmitri
+  name: Дмитрий
+  speaker: dmitri
+  sex: Male
+  source: Своячки
+
+- type: ttsVoice
+  id: irina
+  name: Ирина
+  speaker: irina
+  sex: Female
+  source: Своячки
+
+- type: ttsVoice
+  id: Xenia
+  name: Хения
+  speaker: xenia
+  sex: Female
+  source: Своячки
+
+- type: ttsVoice
+  id: Kseniya
+  name: Ксения
+  speaker: kseniya
+  sex: Female
+  source: Своячки
+
+- type: ttsVoice
+  id: Baya
+  name: Байа
+  speaker: baya
+  sex: Female
+  source: Своячки
+
+- type: ttsVoice
+  id: aidar
+  name: Айдар
+  speaker: aidar
+  sex: Male
+  source: Своячки
+
+- type: ttsVoice
+  id: Еugene
+  name: Евгений
+  speaker: eugene
+  sex: Male
+  source: Своячки

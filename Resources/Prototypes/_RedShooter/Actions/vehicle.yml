@@ -1,0 +1,20 @@
+﻿- type: entity
+  abstract: true
+  parent: BaseAction
+  id: RDSBaseVehicleAction
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+
+- type: entity
+  parent: RDSBaseVehicleAction
+  id: RDSActionVehicleExit
+  name: Выйти
+  description: Выйти из машины
+  components:
+  - type: Action
+    icon:
+      sprite: Interface/Actions/actions_mecha.rsi
+      state: mech_eject
+  - type: InstantAction
+    event: !type:ExitVehicleActionEvent

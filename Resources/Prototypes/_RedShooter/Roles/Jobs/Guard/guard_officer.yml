@@ -17,11 +17,9 @@
   equipment:
     shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesCommand
-    #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
     id: RDSPassportGuard
     ears: RDSClothingHeadsetGuard
+    pocket1: ContractorBaton
   storage:
     back:
     - Flash
-    - TelescopicBaton # Goobstation
-    # - StationCharter

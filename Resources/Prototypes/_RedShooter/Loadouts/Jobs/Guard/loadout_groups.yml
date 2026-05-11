@@ -17,6 +17,7 @@
   - GuardSatchel
   - GuardSatchelAlt
   - GuardDuffel
+  - GuardDuffel15MOLLE
 
 - type: loadoutGroup
   id: GuardBelt
@@ -40,9 +41,11 @@
   name: Верхняя одежда
   loadouts:
   - ArmorWebGuard
-  - MediumArmourGuard
+  - ArmorXenonautenLight
+  - ArmorUEGVestLight
   - ArmorGuardBasic
   - ArmorGuardRiot
+  - MediumArmourGuard
 
 - type: loadoutGroup
   id: GuardShoes

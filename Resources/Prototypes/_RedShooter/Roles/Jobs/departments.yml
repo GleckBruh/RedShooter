@@ -11,7 +11,7 @@
   - GuardCadet
   - GuardOfficer
   - GuardCommander
-  - SecurityOfficer
+
 
 - type: department
   id: SCO

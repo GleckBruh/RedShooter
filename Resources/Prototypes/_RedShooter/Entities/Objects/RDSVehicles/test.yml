@@ -1,0 +1,125 @@
+﻿- type: entity
+  id: RDSBaseVehicle
+  abstract: true
+  save: false
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: RdsVehicle
+    renderOver: None
+  - type: Appearance
+  - type: AmbientSound
+    sound: "/Audio/Effects/Vehicle/vehicleengineidle.ogg"
+    range: 10
+    volume: -2
+    enabled: false
+  - type: InputMover
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Access
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 100
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+        hard: true
+  - type: Pullable
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        #acts: ["Destruction"]
+        acts: ["Breakage"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: MovementSpeedModifier
+    baseAcceleration: 8
+    baseFriction: 0.2 # wheels dont stop instantly
+    baseSprintSpeed: 8.5
+    baseWalkSpeed: 4.5 # default walking speed
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3
+  - type: StaticPrice
+    price: 2500
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+  - type: VehiclePassenger
+
+- type: entity
+  parent: RDSBaseVehicle
+  id: RDSVehicleTest
+  name: Машина стражи
+  description: Мотоцикл отважной стражи города РэдШутер.
+  components:
+  - type: RdsVehicle
+    renderOver: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
+  - type: Sprite
+    sprite: _RedShooter/Objects/RDSVehicle/guard.rsi
+    state: guard_car
+    noRot: true
+  - type: MovementSpeedModifier
+    baseAcceleration: 2
+    baseFriction: 1.5
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 7
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 3.5
+    softness: 2
+  - type: Storage
+    grid:
+    - 0,0,3,1
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - SkeletonMotorcycleKeys
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3
+  - type: VehiclePassenger
+    maxPassengers: 4
+    enterSound:
+      path: /Audio/_RedShooter/Effects/RDSVehicle/Doors/vehicle_enter.ogg
+    exitSound:
+      path: /Audio/_RedShooter/Effects/RDSVehicle/Doors/vehicle_exit.ogg
