@@ -1,10 +1,12 @@
 ﻿using System.Linq;
+using System.Numerics;
 using Content.Shared.Actions;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Content.Shared.Resist;
 
 namespace Content.Shared._RedShooter.RDSVehicle;
 
@@ -12,8 +14,8 @@ public abstract partial class SharedVehiclePassengerSystem : EntitySystem
 {
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
-    [Dependency] private readonly SharedMoverController _mover = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedTransformSystem _transform = default!;
 
     public override void Initialize()
     {
@@ -69,6 +71,9 @@ public abstract partial class SharedVehiclePassengerSystem : EntitySystem
         if (!_container.Insert(user, container))
             return;
 
+        var ev = new RdsVehicleEnteredEvent(user);
+        RaiseLocalEvent(vehicle, ref ev);
+
         _audio.PlayPvs(component.EnterSound, vehicle);
         component.Passengers.Add(user);
     }
@@ -80,8 +85,12 @@ public abstract partial class SharedVehiclePassengerSystem : EntitySystem
         if (!_container.Insert(user, container))
             return;
 
+        var ev = new RdsVehicleEnteredEvent(user);
+        RaiseLocalEvent(vehicle, ref ev);
+
         _audio.PlayPvs(component.EnterSound, vehicle);
         component.Driver = user;
+        EnsureComp<VehicleDriverComponent>(user);
 
         if (TryComp<RdsVehicleComponent>(vehicle, out var vehicleComp))
         {
@@ -91,7 +100,7 @@ public abstract partial class SharedVehiclePassengerSystem : EntitySystem
                 _actionsSystem.AddAction(user, ref vehicleComp.SirenAction, component.SirenAction, vehicle);
 
             if (vehicleComp.EngineRunning)
-                _mover.SetRelay(user, vehicle);
+                return;
         }
     }
 
@@ -109,16 +118,23 @@ public abstract partial class SharedVehiclePassengerSystem : EntitySystem
 
         var vehicle = Transform(passenger).ParentUid;
 
+        var vehiclePos = Transform(vehicle).Coordinates;
+
         if (!TryComp<VehiclePassengerComponent>(vehicle, out var component))
             return;
 
         _container.TryRemoveFromContainer(passenger);
         _audio.PlayPvs(component.ExitSound, vehicle);
         _actionsSystem.RemoveProvidedActions(passenger, vehicle);
+        _transform.SetCoordinates(passenger, vehiclePos.Offset(new Vector2(0f, 0f)));
+
+        var ev = new RdsVehicleExitedEvent(passenger);
+        RaiseLocalEvent(vehicle, ref ev);
+
         if (component.Driver == passenger)
         {
             component.Driver = null;
-            RemComp<RelayInputMoverComponent>(passenger);
+            RemComp<VehicleDriverComponent>(passenger);
         }
         else
         {

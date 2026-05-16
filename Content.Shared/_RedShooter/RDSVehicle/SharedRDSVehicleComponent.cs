@@ -19,6 +19,15 @@ namespace Content.Shared._RedShooter.RDSVehicle;
 public sealed partial class RdsVehicleComponent : Component
 {
     [ViewVariables]
+    public float CurrentSpeed = 0f;
+
+    [ViewVariables]
+    public Angle CurrentAngle = Angle.Zero;
+
+    [ViewVariables]
+    public Angle VelocityAngle = Angle.Zero;
+
+    [ViewVariables]
     public EntityUid? Driver;
 
     [ViewVariables]
@@ -91,6 +100,23 @@ public sealed partial class RdsVehicleComponent : Component
     /// </summary>
     [ViewVariables]
     public EntityUid? ActiveOverlay;
+
+    [DataField]
+    public float MaxSpeed = 6f;
+
+    [DataField]
+    public float Acceleration = 4f;
+
+    [DataField]
+    public float Friction = 3f;
+
+    [DataField]
+    public float TurnSpeed = 2.5f;
+
+    public bool InputForward = false;
+    public bool InputBackward = false;
+    public bool InputLeft = false;
+    public bool InputRight = false;
 }
 
 [Serializable, NetSerializable]

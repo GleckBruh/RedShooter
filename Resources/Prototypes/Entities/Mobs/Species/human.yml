@@ -184,6 +184,16 @@
       # Amour port: WD Slim body types END
   - type: Sprinter # Goob Change: human major
     staminaDrainRate: 8
+  # RedShooter: Start
+  - type: DarknessDetection
+  - type: DarknessDamage
+    damageToDeal:
+      types:
+        Heat: 5
+    darknessThreshold: 0.2
+    updateInterval: 1
+    soundOnDamage:
+  # RedShooter: End
 
 - type: entity
   parent: BaseSpeciesDummy

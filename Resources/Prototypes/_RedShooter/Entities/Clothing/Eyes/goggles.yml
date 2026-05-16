@@ -1,0 +1,15 @@
+# Night Vision Goggles
+
+- type: entity
+  parent: ClothingEyesNightVisionGoggles
+  id: RDSClothingEyesNightVisionGogglesOrder
+  name: ПНВ-О-22 "Око Первого"
+  suffix: Орден
+  description: Прибор Ночного Видения Ордена образца 2022 года с красным люминофором на основе ДоРунической Породы и жидкого Активатора. Способен работать в условиях пространственных и визуальных аномалий, устойчив к вспышкам и не выгорает даже при экстремальной нагрузке. Благодаря аномальной структуре линз и преобразователя позволяет видеть даже там, где света больше не существует. "Смотрящий туда, где света уже нет"
+  components:
+  - type: Sprite
+    sprite: _RedShooter/Clothing/Eyes/Goggles/ordernvg.rsi
+  - type: Clothing
+    sprite: _RedShooter/Clothing/Eyes/Goggles/ordernvg.rsi
+  - type: NightVision
+    color: "#E4717A"

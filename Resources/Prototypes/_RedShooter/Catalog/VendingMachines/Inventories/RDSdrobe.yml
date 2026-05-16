@@ -1,0 +1,41 @@
+- type: vendingMachineInventory
+  id: RDSDrobeInventory
+  startingInventory:
+    RDSClothingUniformJumpsuitGuard: 10
+    RDSClothingUniformJumpsuitHeavyGuard: 10
+    RDSClothingUniformJumpsuitServiseGuard: 10
+    RDSPassportGuard: 10
+    RDSClothingGuardBackpack: 10
+    RDSClothingBackpackGuardSatchel: 10
+    RDSClothingBackpackDuffelGuard: 10
+    RDSClothingBackpackGuard80L: 10
+    RDSClothingHeadsetGuard: 10
+    RDSClothingShoesBootsJackGuard: 10
+    RDSClothingEyesBallisticGlassesGuard: 10
+    RDSClothingBeltGuard: 10
+    RDSClothingBeltGuardWebbing: 10
+    RDSClothingMaskGasGuard: 10
+    RDSClothingMaskGuardianCoif: 10
+    RDSClothingOuterVestWebGuard: 10
+    RDSClothingOuterVestGuardShadowMRKS: 10
+    ClothingOuterArmorBasic: 10
+    ClothingOuterArmorUEGVestMedical: 10
+    RDSClothingOuterArmorGuardRiot: 10
+    ClothingOuterArmorBasicSlim: 10
+    ClothingOuterArmorUEGVestLight: 10
+    RDSClothingHeadHelmetGuardRiot: 10
+    RDSClothingHeadHelmetGuardSfera: 10
+    ClothingHeadHelmetRiot: 10
+    RDSClothingHeadHelmetGuard: 10
+    ClothingHeadHelmetUEGBallistic: 10
+    ClothingHeadHelmetSwatInteQ: 10
+    CombatKnife: 10
+    ContractorBaton: 10
+    BoxFlare: 10
+    GlowstickYellow: 10
+    GlowstickBase: 10
+    GlowstickRed: 10
+    GlowstickBlue: 10
+    GlowstickPurple: 10
+  contrabandInventory:
+

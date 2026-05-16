@@ -14,7 +14,6 @@
   - type: PointLight
     enabled: true
     color: "#4080FF"
-    radius: 1
+    radius: 2.5
     softness: 1
-    energy: 1
-    netsync: false
+    energy: 1.5

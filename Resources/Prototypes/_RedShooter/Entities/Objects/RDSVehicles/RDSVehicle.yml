@@ -1,0 +1,44 @@
+﻿- type: entity
+  parent: RDSBaseVehicle
+  id: RDSVehicleGuard
+  name: Машина стражи
+  description: Старый советский полицейский УАЗ, давно ставший основной рабочей лошадкой Стражи МП-04. Простой, надёжный и неприхотливый. Именно на этих «козликах» бойцы РСМ патрулируют зоны Мрака и выезжают на самые опасные вызовы.
+  components:
+  - type: RdsVehicle
+    renderOver: North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
+    turnSpeed: 1.2
+  - type: Sprite
+    sprite: _RedShooter/Objects/RDSVehicle/guard.rsi
+    state: guard_car
+    noRot: false
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 8
+    softness: 2
+    color: "#A8C8FF"
+  - type: Storage
+    grid:
+    - 0,0,1,3
+    - 3,0,10,3
+    - 12,0,13,3
+    maxItemSize: Ginormous
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - SkeletonMotorcycleKeys
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -3
+  - type: VehiclePassenger
+    maxPassengers: 4
+    enterSound:
+      path: /Audio/_RedShooter/Effects/RDSVehicle/Doors/vehicle_enter.ogg
+    exitSound:
+      path: /Audio/_RedShooter/Effects/RDSVehicle/Doors/vehicle_exit.ogg

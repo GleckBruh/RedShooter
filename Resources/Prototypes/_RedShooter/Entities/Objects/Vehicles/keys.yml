@@ -1,13 +1,13 @@
 - type: entity
   parent: VehicleKeyATV
   id: RDSVehicleKeyMotorbike
-  name: Ключ Мотоцикла Стражи
-  description: Ключ позволяющий вам завести класснючий мотик стражи.
+  name: Ключ Техники Стражи
+  description: Ключ позволяющий вам завести технику стражи.
   components:
     - type: Tag
       tags:
         - VehicleKey
         - SkeletonMotorcycleKeys
     - type: Sprite
-      sprite: Objects/Vehicles/motorbike.rsi
+      sprite: _RedShooter/Objects/Vehicles/motorbike.rsi
       state: keys

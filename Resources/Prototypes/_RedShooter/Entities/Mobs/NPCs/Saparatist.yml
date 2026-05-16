@@ -1,7 +1,8 @@
 ﻿- type: entity
-  name: salvager
+  name: Сепаратист А
+  suffix: ИИ
   parent: BaseMobHuman
-  id: MobSeparA
+  id: RdsMobAISeparA
   components:
       - type: NpcFactionMember
         factions:
@@ -17,9 +18,10 @@
       - type: PartialAbsorbable # Goobstation - changelings
 
 - type: entity
-  name: salvager
+  name: Сепаратист B
+  suffix: ИИ
   parent: BaseMobHuman
-  id: MobSeparB
+  id: RdsMobAISeparB
   components:
   - type: NpcFactionMember
     factions:
@@ -35,9 +37,10 @@
   - type: PartialAbsorbable # Goobstation - changelings
 
 - type: entity
-  name: salvager
+  name: Сепаратист C
+  suffix: ИИ
   parent: BaseMobHuman
-  id: MobSeparC
+  id: RdsMobAISeparC
   components:
   - type: NpcFactionMember
     factions:
@@ -50,4 +53,49 @@
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound
+  - type: PartialAbsorbable # Goobstation - changelings
+
+- type: entity
+  name: Сепаратист А
+  parent: BaseMobHuman
+  id: RdsMobSeparA
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - SeparA
+  - type: InputMover
+  - type: MobMover
+  - type: PartialAbsorbable # Goobstation - changelings
+
+- type: entity
+  name: Сепаратист B
+  parent: BaseMobHuman
+  id: RdsMobSeparB
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - SeparB
+  - type: InputMover
+  - type: MobMover
+  - type: PartialAbsorbable # Goobstation - changelings
+
+- type: entity
+  name: Сепаратист C
+  parent: BaseMobHuman
+  id: RdsMobSeparC
+  components:
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Loadout
+    prototypes:
+    - SeparC
+  - type: InputMover
+  - type: MobMover
   - type: PartialAbsorbable # Goobstation - changelings

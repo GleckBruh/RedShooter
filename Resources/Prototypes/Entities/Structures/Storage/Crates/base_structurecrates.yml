@@ -155,6 +155,20 @@
   - type: Tag
     tags:
       - Crate
+  #RedShooter: Start
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,7,3
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        sprite: _RedShooter/Structures/Storage/Crates/inhands_generic.rsi
+      right:
+      - state: inhand-right
+        sprite: _RedShooter/Structures/Storage/Crates/inhands_generic.rsi
+  - type: MultiHandedItem
+  #RedShooter: End
 
 - type: entity
   parent: CrateGeneric
@@ -221,3 +235,4 @@
   - type: RecyclableOnUnlock #Goobstation - Recycle update
   - type: Paintable
     group: CrateSecure
+

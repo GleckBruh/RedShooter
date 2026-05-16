@@ -2,6 +2,7 @@ using Content.Goobstation.Common.CCVar;
 using Content.Shared._RedShooter.DarknessDamage.Components;
 using Content.Server.Disposal.Unit;
 using Content.Server.Light.Components;
+using Content.Shared._RedShooter.RDSVehicle;
 using Content.Shared.Light.Components;
 using Content.Shared.Physics;
 using Robust.Server.GameObjects;
@@ -65,6 +66,12 @@ public sealed class DarknessDetectionSystem : EntitySystem
     {
         if (HasComp<BeingDisposedComponent>(uid))
             return 0f;
+
+        if (_containerSystem.TryGetContainingContainer(uid, out var vehicleContainer)
+            && HasComp<VehiclePassengerComponent>(vehicleContainer.Owner))
+        {
+            return _maximumLightLevel;
+        }
 
         var worldPos = _transform.GetWorldPosition(xform);
         var totalLightLevel = 0f;

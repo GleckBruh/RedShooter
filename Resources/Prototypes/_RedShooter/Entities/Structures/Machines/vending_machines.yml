@@ -1,0 +1,26 @@
+﻿- type: entity
+  parent: VendingMachine
+  id: RDSVendingRedShooter
+  name: Гардероб Редшутер
+  suffix: Дебаг
+  description: Гардероб для солдат Редшутера пока нету нормальной загрузки режима
+  components:
+  - type: VendingMachine
+    pack: RDSDrobeInventory
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+  - type: DatasetVocalizer
+    dataset: BarDrobeAds
+  - type: SpeakOnUIClosed
+    pack: GenericVendGoodbyes
+  - type: Sprite
+    sprite: Structures/Machines/VendingMachines/bardrobe.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
