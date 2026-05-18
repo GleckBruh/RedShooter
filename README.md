@@ -1,4 +1,4 @@
-﻿<div align="center"><img alt="RedShooter logo" src="https://github.com/user-attachments/assets/7b448c5b-3b69-46be-a4b4-37db196b9a63" width="700px" /></div>
+﻿<div align="center"><img alt="RedShooter logo" src="https://github.com/GleckBruh/RedShooter/Resources/Textures/_RedShooter/Logo/icon/icon-256x256.png" width="700px" /></div>
 
 ---
 
@@ -6,7 +6,7 @@
 
 ## Описание
 
-Redshooter - это форк [Amour Station](https://github.com/Goob-Station/Goob-Station), представляющий собой проект для проведения локальных игр через Radmin VPN или подобную программу.
+Redshooter - это форк [Amour Station](https://github.com/Goob-Station/Goob-Station), представляющий собой проект для проведения локальных игр через [Radmin VPN](https://www.radmin-vpn.com) или подобную программу.
 
 Space Station 14 - это ремейк SS13, который работает на собственном движке  [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), собственном игровом движке, написанном на C#.
 
