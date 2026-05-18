@@ -1,4 +1,4 @@
-﻿<div align="center"><img alt="RedShooter logo" src="https://github.com/GleckBruh/RedShooter/blob/master/Resources/Textures/_RedShooter/Logo/icon/icon-256x256.png" width="700px" /></div>
+﻿<div align="center"><img alt="RedShooter logo" src="https://github.com/GleckBruh/RedShooter/blob/master/Resources/Textures/_RedShooter/Logo/icon/icon-256x256.png" width="256px" /></div>
 
 ---
 
